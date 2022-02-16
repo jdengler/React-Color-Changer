@@ -1,0 +1,119 @@
+html, body, #root, .react-root {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered {
+  text-align: center;
+}
+
+button {
+  padding: 10px;
+  margin: 5px;
+  border: 2px solid white;
+  color: white;
+  font-size: 20px;
+}
+
+.red {
+  background-color: #FF0000;
+  color: #00FFFF;
+}
+
+.orange {
+  background-color: #FFA500;
+  color: #005AFF;
+}
+
+.yellow {
+  background-color: #FFFF00;
+  color: #0000FF;
+}
+
+.green {
+  background-color: #00FF00;
+  color: #FF00FF;
+}
+
+.blue {
+  background-color: #0000FF;
+  color: #FFFF00;
+}
+
+.indigo {
+  background-color: #4B0082;
+  color: #B4FF7D;
+}
+
+.violet {
+  background-color: #8F00FF;
+  color: #70FF00;
+}
+
+.black {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.white {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+#r:hover ~ #a{
+  filter: invert(13%) sepia(98%) saturate(7500%) hue-rotate(1deg) brightness(101%) contrast(116%);
+}
+
+#o:hover ~ #a{
+  filter: invert(17%) sepia(67%) saturate(5665%) hue-rotate(220deg) brightness(108%) contrast(102%);
+}
+
+#y:hover ~ #a{
+  filter: invert(17%) sepia(67%) saturate(5665%) hue-rotate(220deg) brightness(108%) contrast(102%);
+}
+
+#g:active ~ #a{
+  filter: invert(17%) sepia(100%) saturate(3176%) hue-rotate(295deg) brightness(127%) contrast(130%);
+}
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
