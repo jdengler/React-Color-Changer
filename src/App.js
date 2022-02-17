@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
 import logo from './logo.svg';
 import './App.css';
+import { ReactlogoCollection } from './ui-components';
 import ColorButton from './ColorButton'
 
 function App() {
   const [color, setColor, logoColor] = useState('')
   return (
+      <ReactlogoCollection />
       <div className={`react-root ${color}`}>
         <div className='centered'>
         <div id="a">
