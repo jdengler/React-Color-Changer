@@ -17,7 +17,7 @@ function App() {
           <Reactlogo color=indigo />
         </div>
           <div>
-            <ColorButton color='red' setColor={setColor}/>
+            <ColorButton color='red2' setColor={setColor}/>
             <ColorButton color='orange' setColor={setColor}/>
             <ColorButton color='yellow' setColor={setColor}/>
           </div>
