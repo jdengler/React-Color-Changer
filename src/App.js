@@ -1,13 +1,15 @@
 import React, { useState } from 'react'
 import logo from './logo.svg';
 import './App.css';
-import { ReactlogoCollection } from './ui-components';
+import { DataStore } from '@aws-amplify/datastore';
+import { Color } from './models';
+import { Reactlogo } from './ui-components';
 import ColorButton from './ColorButton'
 
 function App() {
   const [color, setColor, logoColor] = useState('')
   return (
-      <ReactlogoCollection />
+      <Reactlogo color=red />
       <div className={`react-root ${color}`}>
         <div className='centered'>
         <div id="a">

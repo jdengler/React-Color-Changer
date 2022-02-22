@@ -1,0 +1,7 @@
+type Color @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  c: String
+  contrast: String
+  primary: String
+}
+ 

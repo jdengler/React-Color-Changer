@@ -1,0 +1,168 @@
+
+type Color @aws_iam @aws_api_key {
+  id: ID!
+  c: String
+  contrast: String
+  primary: String
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+  _version: Int!
+  _deleted: Boolean
+  _lastChangedAt: AWSTimestamp!
+}
+
+input ModelStringInput {
+  ne: String
+  eq: String
+  le: String
+  lt: String
+  ge: String
+  gt: String
+  contains: String
+  notContains: String
+  between: [String]
+  beginsWith: String
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+  size: ModelSizeInput
+}
+
+input ModelIntInput {
+  ne: Int
+  eq: Int
+  le: Int
+  lt: Int
+  ge: Int
+  gt: Int
+  between: [Int]
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+}
+
+input ModelFloatInput {
+  ne: Float
+  eq: Float
+  le: Float
+  lt: Float
+  ge: Float
+  gt: Float
+  between: [Float]
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+}
+
+input ModelBooleanInput {
+  ne: Boolean
+  eq: Boolean
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+}
+
+input ModelIDInput {
+  ne: ID
+  eq: ID
+  le: ID
+  lt: ID
+  ge: ID
+  gt: ID
+  contains: ID
+  notContains: ID
+  between: [ID]
+  beginsWith: ID
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+  size: ModelSizeInput
+}
+
+enum ModelAttributeTypes {
+  binary
+  binarySet
+  bool
+  list
+  map
+  number
+  numberSet
+  string
+  stringSet
+  _null
+}
+
+input ModelSizeInput {
+  ne: Int
+  eq: Int
+  le: Int
+  lt: Int
+  ge: Int
+  gt: Int
+  between: [Int]
+}
+
+enum ModelSortDirection {
+  ASC
+  DESC
+}
+
+type ModelColorConnection @aws_api_key @aws_iam {
+  items: [Color]!
+  nextToken: String
+  startedAt: AWSTimestamp
+}
+
+input ModelColorFilterInput {
+  id: ModelIDInput
+  c: ModelStringInput
+  contrast: ModelStringInput
+  primary: ModelStringInput
+  and: [ModelColorFilterInput]
+  or: [ModelColorFilterInput]
+  not: ModelColorFilterInput
+}
+
+type Query {
+  getColor(id: ID!): Color @aws_api_key @aws_iam
+  listColors(filter: ModelColorFilterInput, limit: Int, nextToken: String): ModelColorConnection @aws_api_key @aws_iam
+  syncColors(filter: ModelColorFilterInput, limit: Int, nextToken: String, lastSync: AWSTimestamp): ModelColorConnection @aws_api_key @aws_iam
+}
+
+input ModelColorConditionInput {
+  c: ModelStringInput
+  contrast: ModelStringInput
+  primary: ModelStringInput
+  and: [ModelColorConditionInput]
+  or: [ModelColorConditionInput]
+  not: ModelColorConditionInput
+}
+
+input CreateColorInput {
+  id: ID
+  c: String
+  contrast: String
+  primary: String
+  _version: Int
+}
+
+input UpdateColorInput {
+  id: ID!
+  c: String
+  contrast: String
+  primary: String
+  _version: Int
+}
+
+input DeleteColorInput {
+  id: ID!
+  _version: Int
+}
+
+type Mutation {
+  createColor(input: CreateColorInput!, condition: ModelColorConditionInput): Color @aws_api_key @aws_iam
+  updateColor(input: UpdateColorInput!, condition: ModelColorConditionInput): Color @aws_api_key @aws_iam
+  deleteColor(input: DeleteColorInput!, condition: ModelColorConditionInput): Color @aws_api_key @aws_iam
+}
+
+type Subscription {
+  onCreateColor: Color @aws_subscribe(mutations: ["createColor"]) @aws_api_key @aws_iam
+  onUpdateColor: Color @aws_subscribe(mutations: ["updateColor"]) @aws_api_key @aws_iam
+  onDeleteColor: Color @aws_subscribe(mutations: ["deleteColor"]) @aws_api_key @aws_iam
+}
+
