@@ -1,0 +1,45 @@
+{
+  "test": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-reactcolorchanger-test-115501-authRole",
+      "UnauthRoleArn": "arn:aws:iam::535616965445:role/amplify-reactcolorchanger-test-115501-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::535616965445:role/amplify-reactcolorchanger-test-115501-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-reactcolorchanger-test-115501-deployment",
+      "UnauthRoleName": "amplify-reactcolorchanger-test-115501-unauthRole",
+      "StackName": "amplify-reactcolorchanger-test-115501",
+      "StackId": "arn:aws:cloudformation:us-east-1:535616965445:stack/amplify-reactcolorchanger-test-115501/70363c70-8fe8-11ec-b37a-12c345db82cd",
+      "AmplifyAppId": "d3j8btq5wq5bsl"
+    },
+    "categories": {
+      "auth": {
+        "reactcolorchanger": {
+          "userPoolId": "us-east-1_6V1oDfXbX",
+          "userPoolName": "TimeStudy-staging",
+          "webClientId": "5bi6kmj7o72ih1rsci9sj8sgn7",
+          "nativeClientId": "5bi6kmj7o72ih1rsci9sj8sgn7",
+          "identityPoolId": "us-east-1:dd2d9b99-fa46-41d6-95df-b3d24a105a04",
+          "identityPoolName": "testAuthIdentityPool__staging",
+          "allowUnauthenticatedIdentities": false,
+          "authRoleArn": "arn:aws:iam::535616965445:role/amplify-timestudy-staging-163850-authRole",
+          "authRoleName": "amplify-timestudy-staging-163850-authRole",
+          "unauthRoleArn": "arn:aws:iam::535616965445:role/amplify-timestudy-staging-163850-unauthRole",
+          "unauthRoleName": "amplify-timestudy-staging-163850-unauthRole"
+        }
+      }
+    }
+  },
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-timestudy1-dev-100515-authRole",
+      "UnauthRoleArn": "arn:aws:iam::535616965445:role/amplify-timestudy1-dev-100515-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::535616965445:role/amplify-timestudy1-dev-100515-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-timestudy1-dev-100515-deployment",
+      "UnauthRoleName": "amplify-timestudy1-dev-100515-unauthRole",
+      "StackName": "amplify-timestudy1-dev-100515",
+      "StackId": "arn:aws:cloudformation:us-east-1:535616965445:stack/amplify-timestudy1-dev-100515/13393620-89c2-11ec-b908-0a39d3fa3a83",
+      "AmplifyAppId": "dxwhcf0fy6j88"
+    }
+  }
+}

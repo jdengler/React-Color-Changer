@@ -35,7 +35,7 @@
         "GraphQLAPIEndpointOutput": "https://brvsx5uztjctjl2znbgysuzlte.appsync-api.us-east-1.amazonaws.com/graphql",
         "GraphQLAPIKeyOutput": "da2-bybpc5uweje7lj3mt63y5dl3i4"
       },
-      "lastPushTimeStamp": "2022-02-18T00:21:27.668Z",
+      "lastPushTimeStamp": "2022-02-22T15:08:59.871Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-reactcolorchanger-test-115501-deployment/amplify-cfn-templates/api/cloudformation-template.json",
         "logicalId": "apiReactColorChanger"

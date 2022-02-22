@@ -1,10 +1,7 @@
 import React, { useState } from 'react'
 import logo from './logo.svg';
 import './App.css';
-import { DataStore } from '@aws-amplify/datastore';
-import { Color } from './models';
-import { Reactlogo } from './ui-components';
-import ColorButton from './ColorButton'
+
 
 function App() {
   const [color, setColor, logoColor] = useState('')
@@ -14,10 +11,10 @@ function App() {
         <div className='centered'>
         <div id="a">
           <h1><img src={logo} className="App-logo" alt="logo"/></h1>
-          <Reactlogo color=indigo />
+          <Reactlogo Color='indigo' />
         </div>
           <div>
-            <ColorButton color='red2' setColor={setColor}/>
+            <ColorButton color='red' setColor={setColor}/>
             <ColorButton color='orange' setColor={setColor}/>
             <ColorButton color='yellow' setColor={setColor}/>
           </div>

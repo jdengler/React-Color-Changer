@@ -2,12 +2,6 @@
     "AppSyncApiName": "ReactColorChanger",
     "DynamoDBBillingMode": "PAY_PER_REQUEST",
     "DynamoDBEnableServerSideEncryption": false,
-    "authRoleName": {
-        "Ref": "AuthRoleName"
-    },
-    "unauthRoleName": {
-        "Ref": "UnauthRoleName"
-    },
     "S3DeploymentBucket": "amplify-reactcolorchanger-test-115501-deployment",
     "S3DeploymentRootKey": "amplify-appsync-files/e4460ab1b8d5b10152ac1ff32fc20b05c3df4779"
 }
