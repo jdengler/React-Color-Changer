@@ -9,11 +9,12 @@ import ColorButton from './ColorButton'
 function App() {
   const [color, setColor, logoColor] = useState('')
   return (
-      <Reactlogo color=indigo />
+
       <div className={`react-root ${color}`}>
         <div className='centered'>
         <div id="a">
           <h1><img src={logo} className="App-logo" alt="logo"/></h1>
+          <Reactlogo color=indigo />
         </div>
           <div>
             <ColorButton color='red' setColor={setColor}/>
