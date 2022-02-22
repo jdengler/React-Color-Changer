@@ -3,10 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { DataStore } from '@aws-amplify/datastore';
-import { Color } from './models';
-import { Reactlogo } from './ui-components';
-import ColorButton from './ColorButton'
+// import { DataStore } from '@aws-amplify/datastore';
+// import { Color } from './models';
+// import { Reactlogo } from './ui-components';
+// import ColorButton from './ColorButton'
+
+import config from './aws-exports'
+import Amplify from 'aws-amplify'
+
+Amplify.configure(config)
 
 ReactDOM.render(
   <React.StrictMode>

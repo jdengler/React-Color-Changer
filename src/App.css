@@ -74,24 +74,6 @@ button {
   pointer-events: none;
 }
 
-#r:hover ~ #a{
-  filter: invert(13%) sepia(98%) saturate(7500%) hue-rotate(1deg) brightness(101%) contrast(116%);
-}
-
-#o:hover ~ #a{
-  filter: invert(17%) sepia(67%) saturate(5665%) hue-rotate(220deg) brightness(108%) contrast(102%);
-}
-
-#y:hover ~ #a{
-  filter: invert(17%) sepia(67%) saturate(5665%) hue-rotate(220deg) brightness(108%) contrast(102%);
-}
-
-#g:active ~ #a{
-  filter: invert(17%) sepia(100%) saturate(3176%) hue-rotate(295deg) brightness(127%) contrast(130%);
-}
-
-
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
