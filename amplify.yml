@@ -4,6 +4,7 @@ frontend:
     preBuild:
       commands:
         - npm install
+        - amplifyPush --simple
 
     build:
       commands:
