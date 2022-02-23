@@ -2,18 +2,9 @@
   opacity: 0.9;
 }
 
-.App-logo:hover {
-  color: radial-gradient( #FF0000, #FF0000, #00FFFF);
-
-}
-
 .amplify-button[data-variation='red']{
   background-color: #FF0000;
   color: #00FFFF;
-}
-.amplify-button[data-variation='grey']{
-  background-color: #a5a5a5;
-  color: #5a5a5a;
 }
 
 .amplify-button[data-variation='red']:hover{
