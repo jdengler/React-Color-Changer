@@ -1,0 +1,102 @@
+.amplify-button:hover {
+  opacity: 0.9;
+}
+
+.App-logo:hover {
+  color: radial-gradient( #FF0000, #FF0000, #00FFFF);
+
+}
+
+.amplify-button[data-variation='red']{
+  background-color: #FF0000;
+  color: #00FFFF;
+}
+.amplify-button[data-variation='grey']{
+  background-color: #a5a5a5;
+  color: #5a5a5a;
+}
+
+.amplify-button[data-variation='red']:hover{
+  background: radial-gradient( #FF0000, #FF0000, #00FFFF);
+  color: #00FFFF;
+}
+
+.amplify-button[data-variation='orange']{
+  background-color: #FFA500;
+  color: #005AFF;
+}
+
+.amplify-button[data-variation='orange']:hover{
+  background: radial-gradient( #FFA500, #FFA500, #005AFF);
+  color: #005AFF;
+}
+
+.amplify-button[data-variation='yellow']{
+  background-color: #FFFF00;
+  color: #0000FF;
+}
+
+.amplify-button[data-variation='yellow']:hover{
+  background: radial-gradient( #FFFF00, #FFFF00, #0000FF);
+  color: #0000FF;
+}
+
+.amplify-button[data-variation='green']{
+  background-color: #00FF00;
+  color: #FF00FF;
+}
+
+.amplify-button[data-variation='green']:hover{
+  background: radial-gradient( #00FF00, #00FF00, #FF00FF);
+  color: #FF00FF;
+}
+
+.amplify-button[data-variation='blue']{
+  background-color: #0000FF;
+  color: #FFFF00;
+}
+
+.amplify-button[data-variation='blue']:hover{
+  background: radial-gradient( #0000FF, #0000FF, #FFFF00);
+  color: #FFFF00;
+}
+
+.amplify-button[data-variation='indigo']{
+  background-color: #4B0082;
+  color: #B4FF7D;
+}
+
+.amplify-button[data-variation='indigo']:hover{
+  background: radial-gradient( #4B0082, #4B0082, #B4FF7D);
+  color: #B4FF7D;
+}
+
+.amplify-button[data-variation='violet']{
+  background-color: #8F00FF;
+  color: #70FF00;
+}
+
+.amplify-button[data-variation='violet']:hover{
+  background: radial-gradient( #8F00FF, #8F00FF, #70FF00);
+  color: #70FF00;
+}
+
+.amplify-button[data-variation='black']{
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.amplify-button[data-variation='black']:hover{
+  background: radial-gradient( #000000, #000000, #FFFFFF);
+  color: #FFFFFF;
+}
+
+.amplify-button[data-variation='white']{
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.amplify-button[data-variation='white']:hover{
+  background: radial-gradient( #FFFFFF, #FFFFFF, #000000);
+  color: #000000;
+}

@@ -1,11 +1,12 @@
 import React from 'react'
+import {Button} from '@aws-amplify/ui-react';
 
 function ColorChangeButton (props) {
   return (
 
-    <button className={props.color} onClick={() => props.setColor(props.color)}>
+    <Button size="large" isFullWidth={true} variation={props.color} onClick={() => props.setColor(props.color)}>
       {props.color}
-    </button>
+    </Button>
   )
 }
 
